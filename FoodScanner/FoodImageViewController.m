@@ -7,15 +7,19 @@
 //
 
 #import "FoodImageViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface ImageViewController ()
+@interface FoodImageViewController ()
+
+@property (strong, nonatomic) FoodRecognitionManager *manager;
 
 @end
 
-@implementation ImageViewController
+@implementation FoodImageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.manager = [[FoodRecognitionManager alloc] init];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -24,15 +28,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)takePhoto:(id)sender {
     
@@ -48,8 +43,12 @@
 -(void) imagePickerController:(nonnull UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info {
     
     UIImage *img = info[UIImagePickerControllerEditedImage];
-    self.imageView.frame= CGRectMake(self.imageView.frame.origin.x, self.imageView.frame.origin.y, img.size.width, img.size.height);
     self.imageView.image = img;
+    
+    [self.manager initializeSession];
+    [self.manager setDelegate:self];
+    [self.manager getInformationForImage:img];
+    
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
@@ -60,6 +59,27 @@
     
 }
 
+- (void)FoodRecognitionManager:(FoodRecognitionManager *)manager didRetrieveTags:(NSArray *)tags{
+    __block NSInteger xDistance = 20;
+    __block NSInteger yDistance = 144;
+    __block NSInteger tagIndex = 0;
 
+    for(NSString *tag in tags){
+        if([tag isKindOfClass:[NSString class]] && tagIndex < 10){
+       
+       /* dispatch_async(dispatch_get_main_queue(), ^{
+            UILabel *tagLabel = [[UILabel alloc] initWithFrame:CGRectMake(xDistance, yDistance, 100, 20)];
+            [tagLabel setText:tag];
+            [tagLabel setBackgroundColor:[UIColor colorWithRed:245/255.0f green:166/255.0f blue:35/255.0f alpha:1.0f]];
+            [tagLabel setTextColor:[UIColor whiteColor]];
+            tagLabel.layer.cornerRadius = 5.0f;
+            tagLabel.layer.masksToBounds = YES;
+            [self.view addSubview:tagLabel];
+            yDistance += 40;
+            tagIndex++;
+        });*/
+    }
+    }
+}
 
 @end

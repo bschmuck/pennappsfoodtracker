@@ -16,10 +16,17 @@ const NSString *kClientSecret = @"ny_DUk-NsLTKraFr9OpEdAAKKdRoU_-QisZsgJc4";
 @interface FoodRecognitionManager()
 
 @property (strong, nonatomic) NSString *imageURL;
+@property (strong, nonatomic) NSMutableArray *tags;
 
 @end
 
 @implementation FoodRecognitionManager
+
+- (id)init{
+    self = [super init];
+    self.tags = [[NSMutableArray alloc] init];
+    return self;
+}
 
 /**
  Intialize a Clarifai Session
@@ -40,6 +47,10 @@ const NSString *kClientSecret = @"ny_DUk-NsLTKraFr9OpEdAAKKdRoU_-QisZsgJc4";
     self.accessToken = returnDict[@"access_token"];
 }
 
+/**
+ Get information corresponding to a remote image
+ located at a given URL
+ */
 - (void)getInformationFromRemoteImage:(NSString *)imageURLString{
     NSString *tagRequestURLString = @"https://api.clarifai.com/v1/tag/";
     NSURL *tagRequestURL = [NSURL URLWithString:tagRequestURLString];
@@ -56,9 +67,21 @@ const NSString *kClientSecret = @"ny_DUk-NsLTKraFr9OpEdAAKKdRoU_-QisZsgJc4";
     NSError *error = nil;
     NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     NSDictionary *returnDict = [NSJSONSerialization JSONObjectWithData:returnData options:0 error:&error];
+    NSDictionary *resultsDict = [returnDict valueForKeyPath:@"results"];
+    NSDictionary *resultDict = [resultsDict valueForKeyPath:@"result"];
+    NSDictionary *tagDict = [resultDict valueForKeyPath:@"tag"];
+    NSArray *tagArray = [tagDict valueForKeyPath:@"classes"];
+    for(NSArray *tag in tagArray){
+        self.tags = [tag mutableCopy];
+    }
+    NSLog(@"%@", self.tags);
+    [self.delegate FoodRecognitionManager:self didRetrieveTags:self.tags];
     
 }
 
+/**
+ Get information for a given image.
+ */
 - (void)getInformationForImage:(UIImage *)image{
     // Convert to JPEG with 50% quality
     NSData* data = UIImageJPEGRepresentation(image, 1.0f);

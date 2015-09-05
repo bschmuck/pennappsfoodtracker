@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 
 #import "FoodImageViewController.h"
+#import "FoodPageViewController.h"
 
 const NSString *kApplicationID = @"FtFQuoqGvbIhBJ7zDweg0oR2bvLyNP9ug3vuophH";
 

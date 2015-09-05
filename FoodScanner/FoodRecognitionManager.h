@@ -9,9 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class FoodRecognitionManager;
+
+@protocol FoodRecognitionManagerDelegate <NSObject>
+
+- (void)FoodRecognitionManager:(FoodRecognitionManager *)manager didRetrieveTags:(NSArray *)tags;
+
+@end
+
 @interface FoodRecognitionManager : NSObject
 
 @property (copy, nonatomic) NSString *accessToken;
+@property (weak) id<FoodRecognitionManagerDelegate>delegate;
 
 - (void)initializeSession;
 //- (void)getInformationForImage:(NSString *)imageURLString;

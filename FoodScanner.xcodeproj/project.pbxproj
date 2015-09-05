@@ -30,7 +30,12 @@
 		F0857D871B9A929200B03E98 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D861B9A929200B03E98 /* libz.tbd */; };
 		F0857D891B9A929D00B03E98 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D881B9A929D00B03E98 /* libsqlite3.tbd */; };
 		F0857D8D1B9A97C800B03E98 /* FoodImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */; };
-		F0857D8E1B9A97C800B03E98 /* FoodImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0857D8C1B9A97C800B03E98 /* FoodImageViewController.xib */; };
+		F0857D911B9AB49400B03E98 /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D901B9AB49400B03E98 /* cameraIcon.png */; };
+		F0857D931B9AB62400B03E98 /* FoodImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */; };
+		F0857D951B9AB7B200B03E98 /* placeholderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D941B9AB7B200B03E98 /* placeholderImage.png */; };
+		F0857D971B9ABECE00B03E98 /* listTagsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D961B9ABECE00B03E98 /* listTagsIcon.png */; };
+		F0F434531B9AC7C20079D067 /* FoodPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F434511B9AC7C20079D067 /* FoodPageViewController.m */; };
+		F0F434541B9AC7C20079D067 /* FoodPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +89,13 @@
 		F0857D881B9A929D00B03E98 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F0857D8A1B9A97C800B03E98 /* FoodImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodImageViewController.h; sourceTree = "<group>"; };
 		F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodImageViewController.m; sourceTree = "<group>"; };
-		F0857D8C1B9A97C800B03E98 /* FoodImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodImageViewController.xib; sourceTree = "<group>"; };
+		F0857D901B9AB49400B03E98 /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
+		F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodImageViewController.xib; sourceTree = "<group>"; };
+		F0857D941B9AB7B200B03E98 /* placeholderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderImage.png; sourceTree = "<group>"; };
+		F0857D961B9ABECE00B03E98 /* listTagsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listTagsIcon.png; sourceTree = "<group>"; };
+		F0F434501B9AC7C20079D067 /* FoodPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodPageViewController.h; sourceTree = "<group>"; };
+		F0F434511B9AC7C20079D067 /* FoodPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodPageViewController.m; sourceTree = "<group>"; };
+		F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodPageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,19 +140,13 @@
 			children = (
 				F0857D881B9A929D00B03E98 /* libsqlite3.tbd */,
 				F0857D861B9A929200B03E98 /* libz.tbd */,
-				F0857D841B9A928C00B03E98 /* SystemConfiguration.framework */,
-				F0857D821B9A928400B03E98 /* StoreKit.framework */,
-				F0857D801B9A927500B03E98 /* Security.framework */,
-				F0857D7E1B9A926E00B03E98 /* QuartzCore.framework */,
-				F0857D7C1B9A926900B03E98 /* CoreLocation.framework */,
-				F0857D7A1B9A926300B03E98 /* CoreGraphics.framework */,
-				F0857D781B9A925D00B03E98 /* CFNetwork.framework */,
-				F0857D761B9A925600B03E98 /* AudioToolbox.framework */,
+				F0F4344F1B9AC7970079D067 /* Framework */,
 				F0857D391B9A74EE00B03E98 /* FoodScanner */,
 				F0857D531B9A74EF00B03E98 /* FoodScannerTests */,
 				F0857D5E1B9A74EF00B03E98 /* FoodScannerUITests */,
 				F0857D381B9A74EE00B03E98 /* Products */,
 				F0857D701B9A7BD400B03E98 /* coffee-3.jpg */,
+				F0857D901B9AB49400B03E98 /* cameraIcon.png */,
 				F0857D721B9A91FD00B03E98 /* Bolts.framework */,
 				F0857D731B9A91FD00B03E98 /* Parse.framework */,
 			);
@@ -171,6 +176,8 @@
 				F0857D461B9A74EE00B03E98 /* Assets.xcassets */,
 				F0857D481B9A74EE00B03E98 /* LaunchScreen.storyboard */,
 				F0857D4B1B9A74EE00B03E98 /* Info.plist */,
+				F0857D961B9ABECE00B03E98 /* listTagsIcon.png */,
+				F0857D941B9AB7B200B03E98 /* placeholderImage.png */,
 				F0857D3A1B9A74EE00B03E98 /* Supporting Files */,
 			);
 			path = FoodScanner;
@@ -207,9 +214,27 @@
 			children = (
 				F0857D8A1B9A97C800B03E98 /* FoodImageViewController.h */,
 				F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */,
-				F0857D8C1B9A97C800B03E98 /* FoodImageViewController.xib */,
+				F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */,
+				F0F434501B9AC7C20079D067 /* FoodPageViewController.h */,
+				F0F434511B9AC7C20079D067 /* FoodPageViewController.m */,
+				F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */,
 			);
 			name = "Camera Image";
+			sourceTree = "<group>";
+		};
+		F0F4344F1B9AC7970079D067 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F0857D841B9A928C00B03E98 /* SystemConfiguration.framework */,
+				F0857D821B9A928400B03E98 /* StoreKit.framework */,
+				F0857D801B9A927500B03E98 /* Security.framework */,
+				F0857D7E1B9A926E00B03E98 /* QuartzCore.framework */,
+				F0857D7C1B9A926900B03E98 /* CoreLocation.framework */,
+				F0857D7A1B9A926300B03E98 /* CoreGraphics.framework */,
+				F0857D781B9A925D00B03E98 /* CFNetwork.framework */,
+				F0857D761B9A925600B03E98 /* AudioToolbox.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,11 +343,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0857D8E1B9A97C800B03E98 /* FoodImageViewController.xib in Resources */,
+				F0F434541B9AC7C20079D067 /* FoodPageViewController.xib in Resources */,
 				F0857D4A1B9A74EE00B03E98 /* LaunchScreen.storyboard in Resources */,
 				F0857D471B9A74EE00B03E98 /* Assets.xcassets in Resources */,
+				F0857D951B9AB7B200B03E98 /* placeholderImage.png in Resources */,
+				F0857D911B9AB49400B03E98 /* cameraIcon.png in Resources */,
 				F0857D451B9A74EE00B03E98 /* Main.storyboard in Resources */,
+				F0857D931B9AB62400B03E98 /* FoodImageViewController.xib in Resources */,
 				F0857D711B9A7BD400B03E98 /* coffee-3.jpg in Resources */,
+				F0857D971B9ABECE00B03E98 /* listTagsIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +379,7 @@
 				F0857D8D1B9A97C800B03E98 /* FoodImageViewController.m in Sources */,
 				F0857D421B9A74EE00B03E98 /* ViewController.m in Sources */,
 				F0857D3F1B9A74EE00B03E98 /* AppDelegate.m in Sources */,
+				F0F434531B9AC7C20079D067 /* FoodPageViewController.m in Sources */,
 				F0857D3C1B9A74EE00B03E98 /* main.m in Sources */,
 				F0857D6F1B9A75FD00B03E98 /* FoodRecognitionManager.m in Sources */,
 			);
@@ -498,6 +528,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FoodScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bschmuck.FoodScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +545,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FoodScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bschmuck.FoodScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";

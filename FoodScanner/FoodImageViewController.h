@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FoodRecognitionManager.h"
 
-@interface FoodImageViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@interface FoodImageViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FoodRecognitionManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *photoButton;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
