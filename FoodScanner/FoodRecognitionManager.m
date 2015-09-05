@@ -59,7 +59,6 @@ const NSString *kClientSecret = @"ny_DUk-NsLTKraFr9OpEdAAKKdRoU_-QisZsgJc4";
     [request setHTTPMethod:@"POST"];
     [request addValue:[NSString stringWithFormat:@"Bearer %@", self.accessToken] forHTTPHeaderField:@"Authorization"];
     
-    
     NSString *args = [NSString stringWithFormat:@"url=%@", imageURLString];
     [request setHTTPBody:[args dataUsingEncoding:NSUTF8StringEncoding]];
     
@@ -76,25 +75,20 @@ const NSString *kClientSecret = @"ny_DUk-NsLTKraFr9OpEdAAKKdRoU_-QisZsgJc4";
     }
     NSLog(@"%@", self.tags);
     [self.delegate FoodRecognitionManager:self didRetrieveTags:self.tags];
-    
 }
 
 /**
  Get information for a given image.
  */
 - (void)getInformationForImage:(UIImage *)image{
-    // Convert to JPEG with 50% quality
     NSData* data = UIImageJPEGRepresentation(image, 1.0f);
     PFFile *imageFile = [PFFile fileWithName:@"image.jpg" data:data];
     
-    // Save the image to Parse
-    
     [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
-            // The image has now been uploaded to Parse. Associate it with a new object
             PFObject* newPhotoObject = [PFObject objectWithClassName:@"PhotoObject"];
             [newPhotoObject setObject:imageFile forKey:@"image"];
-            
+    
             [newPhotoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (!error) {
                     NSLog(@"Saved");
@@ -102,7 +96,6 @@ const NSString *kClientSecret = @"ny_DUk-NsLTKraFr9OpEdAAKKdRoU_-QisZsgJc4";
                     [self getInformationFromRemoteImage:imageURL];
                 }
                 else{
-                    // Error
                     NSLog(@"Error: %@ %@", error, [error userInfo]);
                 }
             }];

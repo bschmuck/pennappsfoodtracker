@@ -23,7 +23,6 @@
 @property (weak) id<FoodRecognitionManagerDelegate>delegate;
 
 - (void)initializeSession;
-//- (void)getInformationForImage:(NSString *)imageURLString;
 - (void)getInformationForImage:(UIImage *)image;
 
 @end

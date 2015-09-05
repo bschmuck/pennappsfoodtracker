@@ -7,9 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0526F321B9BA6F0003C9415 /* FoodSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0526F301B9BA6F0003C9415 /* FoodSummaryViewController.m */; };
+		F0526F331B9BA6F0003C9415 /* FoodSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0526F311B9BA6F0003C9415 /* FoodSummaryViewController.xib */; };
+		F0526F361B9BA7E2003C9415 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0526F351B9BA7E2003C9415 /* CircleProgressView.m */; };
+		F08276FD1B9B2EDA00E749DC /* output.json in Resources */ = {isa = PBXBuildFile; fileRef = F08276FC1B9B2EDA00E749DC /* output.json */; };
+		F08277041B9B38A300E749DC /* FoodLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08276FF1B9B38A300E749DC /* FoodLoginViewController.m */; };
+		F08277051B9B38A300E749DC /* FoodLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08277001B9B38A300E749DC /* FoodLoginViewController.xib */; };
+		F08277061B9B38A300E749DC /* FoodSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08277021B9B38A300E749DC /* FoodSignUpViewController.m */; };
+		F08277071B9B38A300E749DC /* FoodSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08277031B9B38A300E749DC /* FoodSignUpViewController.xib */; };
+		F08277121B9B561300E749DC /* FoodHealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F08277111B9B561300E749DC /* FoodHealthKitManager.m */; };
+		F08277171B9B569A00E749DC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08277161B9B569A00E749DC /* HealthKit.framework */; };
+		F082771A1B9B602900E749DC /* FoodHistoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = F08277191B9B602900E749DC /* FoodHistoryData.m */; };
+		F08277241B9B6F0400E749DC /* BananaScana.png in Resources */ = {isa = PBXBuildFile; fileRef = F08277231B9B6F0400E749DC /* BananaScana.png */; };
+		F08277261B9B6F9900E749DC /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F08277251B9B6F9900E749DC /* cameraIcon.png */; };
+		F08277281B9B6FB900E749DC /* historyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F08277271B9B6FB800E749DC /* historyIcon.png */; };
+		F08277321B9B799D00E749DC /* FoodLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08277301B9B799D00E749DC /* FoodLeftMenuViewController.m */; };
+		F08277331B9B799D00E749DC /* FoodLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08277311B9B799D00E749DC /* FoodLeftMenuViewController.xib */; };
+		F082773A1B9B7C7900E749DC /* FoodFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08277381B9B7C7900E749DC /* FoodFrameViewController.m */; };
+		F082773B1B9B7C7900E749DC /* FoodFrameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08277391B9B7C7900E749DC /* FoodFrameViewController.xib */; };
+		F082773D1B9B7DD800E749DC /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F082773C1B9B7DD800E749DC /* menuButton.png */; };
+		F08277441B9B84C600E749DC /* FoodCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08277421B9B84C600E749DC /* FoodCenterViewController.m */; };
+		F08277451B9B84C600E749DC /* FoodCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08277431B9B84C600E749DC /* FoodCenterViewController.xib */; };
 		F0857D3C1B9A74EE00B03E98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D3B1B9A74EE00B03E98 /* main.m */; };
 		F0857D3F1B9A74EE00B03E98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D3E1B9A74EE00B03E98 /* AppDelegate.m */; };
-		F0857D421B9A74EE00B03E98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D411B9A74EE00B03E98 /* ViewController.m */; };
 		F0857D451B9A74EE00B03E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0857D431B9A74EE00B03E98 /* Main.storyboard */; };
 		F0857D471B9A74EE00B03E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0857D461B9A74EE00B03E98 /* Assets.xcassets */; };
 		F0857D4A1B9A74EE00B03E98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0857D481B9A74EE00B03E98 /* LaunchScreen.storyboard */; };
@@ -30,12 +50,12 @@
 		F0857D871B9A929200B03E98 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D861B9A929200B03E98 /* libz.tbd */; };
 		F0857D891B9A929D00B03E98 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D881B9A929D00B03E98 /* libsqlite3.tbd */; };
 		F0857D8D1B9A97C800B03E98 /* FoodImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */; };
-		F0857D911B9AB49400B03E98 /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D901B9AB49400B03E98 /* cameraIcon.png */; };
 		F0857D931B9AB62400B03E98 /* FoodImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */; };
-		F0857D951B9AB7B200B03E98 /* placeholderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D941B9AB7B200B03E98 /* placeholderImage.png */; };
 		F0857D971B9ABECE00B03E98 /* listTagsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D961B9ABECE00B03E98 /* listTagsIcon.png */; };
-		F0F434531B9AC7C20079D067 /* FoodPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F434511B9AC7C20079D067 /* FoodPageViewController.m */; };
+		F096023F1B9B966800D62A23 /* FoodServingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F096023D1B9B966800D62A23 /* FoodServingsViewController.m */; };
+		F09602401B9B966800D62A23 /* FoodServingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F096023E1B9B966800D62A23 /* FoodServingsViewController.xib */; };
 		F0F434541B9AC7C20079D067 /* FoodPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */; };
+		F0F434591B9B20230079D067 /* FoodTagLookupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F434581B9B20230079D067 /* FoodTagLookupManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +76,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0526F2F1B9BA6F0003C9415 /* FoodSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodSummaryViewController.h; sourceTree = "<group>"; };
+		F0526F301B9BA6F0003C9415 /* FoodSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodSummaryViewController.m; sourceTree = "<group>"; };
+		F0526F311B9BA6F0003C9415 /* FoodSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodSummaryViewController.xib; sourceTree = "<group>"; };
+		F0526F341B9BA7E2003C9415 /* CircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
+		F0526F351B9BA7E2003C9415 /* CircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
+		F08276FC1B9B2EDA00E749DC /* output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+		F08276FE1B9B38A300E749DC /* FoodLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodLoginViewController.h; sourceTree = "<group>"; };
+		F08276FF1B9B38A300E749DC /* FoodLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodLoginViewController.m; sourceTree = "<group>"; };
+		F08277001B9B38A300E749DC /* FoodLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodLoginViewController.xib; sourceTree = "<group>"; };
+		F08277011B9B38A300E749DC /* FoodSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodSignUpViewController.h; sourceTree = "<group>"; };
+		F08277021B9B38A300E749DC /* FoodSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodSignUpViewController.m; sourceTree = "<group>"; };
+		F08277031B9B38A300E749DC /* FoodSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodSignUpViewController.xib; sourceTree = "<group>"; };
+		F08277101B9B561300E749DC /* FoodHealthKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodHealthKitManager.h; path = ../FoodHealthKitManager.h; sourceTree = "<group>"; };
+		F08277111B9B561300E749DC /* FoodHealthKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodHealthKitManager.m; path = ../FoodHealthKitManager.m; sourceTree = "<group>"; };
+		F08277151B9B569A00E749DC /* FoodScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FoodScanner.entitlements; sourceTree = "<group>"; };
+		F08277161B9B569A00E749DC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F08277181B9B602900E749DC /* FoodHistoryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodHistoryData.h; sourceTree = "<group>"; };
+		F08277191B9B602900E749DC /* FoodHistoryData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodHistoryData.m; sourceTree = "<group>"; };
+		F08277231B9B6F0400E749DC /* BananaScana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BananaScana.png; sourceTree = "<group>"; };
+		F08277251B9B6F9900E749DC /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
+		F08277271B9B6FB800E749DC /* historyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historyIcon.png; sourceTree = "<group>"; };
+		F082772F1B9B799D00E749DC /* FoodLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodLeftMenuViewController.h; sourceTree = "<group>"; };
+		F08277301B9B799D00E749DC /* FoodLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodLeftMenuViewController.m; sourceTree = "<group>"; };
+		F08277311B9B799D00E749DC /* FoodLeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodLeftMenuViewController.xib; sourceTree = "<group>"; };
+		F08277371B9B7C7900E749DC /* FoodFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodFrameViewController.h; sourceTree = "<group>"; };
+		F08277381B9B7C7900E749DC /* FoodFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodFrameViewController.m; sourceTree = "<group>"; };
+		F08277391B9B7C7900E749DC /* FoodFrameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodFrameViewController.xib; sourceTree = "<group>"; };
+		F082773C1B9B7DD800E749DC /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
+		F08277411B9B84C600E749DC /* FoodCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCenterViewController.h; sourceTree = "<group>"; };
+		F08277421B9B84C600E749DC /* FoodCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCenterViewController.m; sourceTree = "<group>"; };
+		F08277431B9B84C600E749DC /* FoodCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCenterViewController.xib; sourceTree = "<group>"; };
 		F0857D371B9A74EE00B03E98 /* FoodScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0857D3B1B9A74EE00B03E98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0857D3D1B9A74EE00B03E98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0857D3E1B9A74EE00B03E98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0857D401B9A74EE00B03E98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0857D411B9A74EE00B03E98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F0857D441B9A74EE00B03E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0857D461B9A74EE00B03E98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0857D491B9A74EE00B03E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,13 +138,15 @@
 		F0857D881B9A929D00B03E98 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F0857D8A1B9A97C800B03E98 /* FoodImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodImageViewController.h; sourceTree = "<group>"; };
 		F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodImageViewController.m; sourceTree = "<group>"; };
-		F0857D901B9AB49400B03E98 /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
 		F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodImageViewController.xib; sourceTree = "<group>"; };
 		F0857D941B9AB7B200B03E98 /* placeholderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderImage.png; sourceTree = "<group>"; };
 		F0857D961B9ABECE00B03E98 /* listTagsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listTagsIcon.png; sourceTree = "<group>"; };
-		F0F434501B9AC7C20079D067 /* FoodPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodPageViewController.h; sourceTree = "<group>"; };
-		F0F434511B9AC7C20079D067 /* FoodPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodPageViewController.m; sourceTree = "<group>"; };
+		F096023C1B9B966800D62A23 /* FoodServingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodServingsViewController.h; sourceTree = "<group>"; };
+		F096023D1B9B966800D62A23 /* FoodServingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodServingsViewController.m; sourceTree = "<group>"; };
+		F096023E1B9B966800D62A23 /* FoodServingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodServingsViewController.xib; sourceTree = "<group>"; };
 		F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodPageViewController.xib; sourceTree = "<group>"; };
+		F0F434571B9B20230079D067 /* FoodTagLookupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTagLookupManager.h; sourceTree = "<group>"; };
+		F0F434581B9B20230079D067 /* FoodTagLookupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTagLookupManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +161,7 @@
 				F0857D811B9A927500B03E98 /* Security.framework in Frameworks */,
 				F0857D7F1B9A926E00B03E98 /* QuartzCore.framework in Frameworks */,
 				F0857D7D1B9A926900B03E98 /* CoreLocation.framework in Frameworks */,
+				F08277171B9B569A00E749DC /* HealthKit.framework in Frameworks */,
 				F0857D7B1B9A926300B03E98 /* CoreGraphics.framework in Frameworks */,
 				F0857D791B9A925D00B03E98 /* CFNetwork.framework in Frameworks */,
 				F0857D771B9A925600B03E98 /* AudioToolbox.framework in Frameworks */,
@@ -135,18 +187,127 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F082770A1B9B524700E749DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F08277001B9B38A300E749DC /* FoodLoginViewController.xib */,
+				F08277031B9B38A300E749DC /* FoodSignUpViewController.xib */,
+				F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */,
+				F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */,
+				F08277311B9B799D00E749DC /* FoodLeftMenuViewController.xib */,
+				F08277391B9B7C7900E749DC /* FoodFrameViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F082770B1B9B525300E749DC /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0857D8A1B9A97C800B03E98 /* FoodImageViewController.h */,
+				F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */,
+				F096023C1B9B966800D62A23 /* FoodServingsViewController.h */,
+				F096023D1B9B966800D62A23 /* FoodServingsViewController.m */,
+				F096023E1B9B966800D62A23 /* FoodServingsViewController.xib */,
+				F08277341B9B7BC600E749DC /* Left Menu */,
+				F08277371B9B7C7900E749DC /* FoodFrameViewController.h */,
+				F08277381B9B7C7900E749DC /* FoodFrameViewController.m */,
+			);
+			name = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		F082770C1B9B525D00E749DC /* Login View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F08276FE1B9B38A300E749DC /* FoodLoginViewController.h */,
+				F08276FF1B9B38A300E749DC /* FoodLoginViewController.m */,
+			);
+			name = "Login View Controller";
+			sourceTree = "<group>";
+		};
+		F082770D1B9B526300E749DC /* Sign up View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F08277011B9B38A300E749DC /* FoodSignUpViewController.h */,
+				F08277021B9B38A300E749DC /* FoodSignUpViewController.m */,
+			);
+			name = "Sign up View Controller";
+			sourceTree = "<group>";
+		};
+		F082770E1B9B528700E749DC /* Tag Lookup */ = {
+			isa = PBXGroup;
+			children = (
+				F0F434571B9B20230079D067 /* FoodTagLookupManager.h */,
+				F0F434581B9B20230079D067 /* FoodTagLookupManager.m */,
+			);
+			name = "Tag Lookup";
+			sourceTree = "<group>";
+		};
+		F082770F1B9B529000E749DC /* Food Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				F0857D6D1B9A75FD00B03E98 /* FoodRecognitionManager.h */,
+				F0857D6E1B9A75FD00B03E98 /* FoodRecognitionManager.m */,
+			);
+			name = "Food Recognition";
+			sourceTree = "<group>";
+		};
+		F082771B1B9B603800E749DC /* Food Parse Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F08277181B9B602900E749DC /* FoodHistoryData.h */,
+				F08277191B9B602900E749DC /* FoodHistoryData.m */,
+			);
+			name = "Food Parse Manager";
+			sourceTree = "<group>";
+		};
+		F082771C1B9B604000E749DC /* HealthKit Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F08277101B9B561300E749DC /* FoodHealthKitManager.h */,
+				F08277111B9B561300E749DC /* FoodHealthKitManager.m */,
+			);
+			name = "HealthKit Manager";
+			sourceTree = "<group>";
+		};
+		F082771E1B9B605E00E749DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F082771C1B9B604000E749DC /* HealthKit Manager */,
+				F082771B1B9B603800E749DC /* Food Parse Manager */,
+				F0857D3D1B9A74EE00B03E98 /* AppDelegate.h */,
+				F0857D3E1B9A74EE00B03E98 /* AppDelegate.m */,
+				F082770F1B9B529000E749DC /* Food Recognition */,
+				F082770E1B9B528700E749DC /* Tag Lookup */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F08277341B9B7BC600E749DC /* Left Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F082772F1B9B799D00E749DC /* FoodLeftMenuViewController.h */,
+				F08277301B9B799D00E749DC /* FoodLeftMenuViewController.m */,
+			);
+			name = "Left Menu";
+			sourceTree = "<group>";
+		};
 		F0857D2E1B9A74EE00B03E98 = {
 			isa = PBXGroup;
 			children = (
+				F08277161B9B569A00E749DC /* HealthKit.framework */,
 				F0857D881B9A929D00B03E98 /* libsqlite3.tbd */,
 				F0857D861B9A929200B03E98 /* libz.tbd */,
+				F08277231B9B6F0400E749DC /* BananaScana.png */,
 				F0F4344F1B9AC7970079D067 /* Framework */,
 				F0857D391B9A74EE00B03E98 /* FoodScanner */,
 				F0857D531B9A74EF00B03E98 /* FoodScannerTests */,
 				F0857D5E1B9A74EF00B03E98 /* FoodScannerUITests */,
 				F0857D381B9A74EE00B03E98 /* Products */,
+				F08277271B9B6FB800E749DC /* historyIcon.png */,
+				F082773C1B9B7DD800E749DC /* menuButton.png */,
+				F08277251B9B6F9900E749DC /* cameraIcon.png */,
 				F0857D701B9A7BD400B03E98 /* coffee-3.jpg */,
-				F0857D901B9AB49400B03E98 /* cameraIcon.png */,
+				F08276FC1B9B2EDA00E749DC /* output.json */,
 				F0857D721B9A91FD00B03E98 /* Bolts.framework */,
 				F0857D731B9A91FD00B03E98 /* Parse.framework */,
 			);
@@ -165,14 +326,14 @@
 		F0857D391B9A74EE00B03E98 /* FoodScanner */ = {
 			isa = PBXGroup;
 			children = (
-				F0857D3D1B9A74EE00B03E98 /* AppDelegate.h */,
-				F0857D3E1B9A74EE00B03E98 /* AppDelegate.m */,
-				F0857D8F1B9A9AA700B03E98 /* Camera Image */,
-				F0857D6D1B9A75FD00B03E98 /* FoodRecognitionManager.h */,
-				F0857D6E1B9A75FD00B03E98 /* FoodRecognitionManager.m */,
-				F0857D401B9A74EE00B03E98 /* ViewController.h */,
-				F0857D411B9A74EE00B03E98 /* ViewController.m */,
+				F08277151B9B569A00E749DC /* FoodScanner.entitlements */,
+				F082771E1B9B605E00E749DC /* Model */,
+				F082770A1B9B524700E749DC /* Views */,
+				F0857D8F1B9A9AA700B03E98 /* View Controllers */,
 				F0857D431B9A74EE00B03E98 /* Main.storyboard */,
+				F08277411B9B84C600E749DC /* FoodCenterViewController.h */,
+				F08277421B9B84C600E749DC /* FoodCenterViewController.m */,
+				F08277431B9B84C600E749DC /* FoodCenterViewController.xib */,
 				F0857D461B9A74EE00B03E98 /* Assets.xcassets */,
 				F0857D481B9A74EE00B03E98 /* LaunchScreen.storyboard */,
 				F0857D4B1B9A74EE00B03E98 /* Info.plist */,
@@ -209,17 +370,19 @@
 			path = FoodScannerUITests;
 			sourceTree = "<group>";
 		};
-		F0857D8F1B9A9AA700B03E98 /* Camera Image */ = {
+		F0857D8F1B9A9AA700B03E98 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F0857D8A1B9A97C800B03E98 /* FoodImageViewController.h */,
-				F0857D8B1B9A97C800B03E98 /* FoodImageViewController.m */,
-				F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */,
-				F0F434501B9AC7C20079D067 /* FoodPageViewController.h */,
-				F0F434511B9AC7C20079D067 /* FoodPageViewController.m */,
-				F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */,
+				F0526F2F1B9BA6F0003C9415 /* FoodSummaryViewController.h */,
+				F0526F301B9BA6F0003C9415 /* FoodSummaryViewController.m */,
+				F0526F311B9BA6F0003C9415 /* FoodSummaryViewController.xib */,
+				F0526F341B9BA7E2003C9415 /* CircleProgressView.h */,
+				F0526F351B9BA7E2003C9415 /* CircleProgressView.m */,
+				F082770B1B9B525300E749DC /* Main View Controller */,
+				F082770C1B9B525D00E749DC /* Login View Controller */,
+				F082770D1B9B526300E749DC /* Sign up View Controller */,
 			);
-			name = "Camera Image";
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		F0F4344F1B9AC7970079D067 /* Framework */ = {
@@ -305,6 +468,11 @@
 					F0857D361B9A74EE00B03E98 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = W2K89DDM88;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					F0857D4F1B9A74EF00B03E98 = {
 						CreatedOnToolsVersion = 7.0;
@@ -344,14 +512,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0F434541B9AC7C20079D067 /* FoodPageViewController.xib in Resources */,
+				F08277281B9B6FB900E749DC /* historyIcon.png in Resources */,
 				F0857D4A1B9A74EE00B03E98 /* LaunchScreen.storyboard in Resources */,
+				F0526F331B9BA6F0003C9415 /* FoodSummaryViewController.xib in Resources */,
 				F0857D471B9A74EE00B03E98 /* Assets.xcassets in Resources */,
-				F0857D951B9AB7B200B03E98 /* placeholderImage.png in Resources */,
-				F0857D911B9AB49400B03E98 /* cameraIcon.png in Resources */,
 				F0857D451B9A74EE00B03E98 /* Main.storyboard in Resources */,
+				F08277051B9B38A300E749DC /* FoodLoginViewController.xib in Resources */,
+				F08277451B9B84C600E749DC /* FoodCenterViewController.xib in Resources */,
+				F08276FD1B9B2EDA00E749DC /* output.json in Resources */,
 				F0857D931B9AB62400B03E98 /* FoodImageViewController.xib in Resources */,
+				F08277261B9B6F9900E749DC /* cameraIcon.png in Resources */,
 				F0857D711B9A7BD400B03E98 /* coffee-3.jpg in Resources */,
+				F08277071B9B38A300E749DC /* FoodSignUpViewController.xib in Resources */,
+				F08277331B9B799D00E749DC /* FoodLeftMenuViewController.xib in Resources */,
+				F082773D1B9B7DD800E749DC /* menuButton.png in Resources */,
 				F0857D971B9ABECE00B03E98 /* listTagsIcon.png in Resources */,
+				F082773B1B9B7C7900E749DC /* FoodFrameViewController.xib in Resources */,
+				F08277241B9B6F0400E749DC /* BananaScana.png in Resources */,
+				F09602401B9B966800D62A23 /* FoodServingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,9 +555,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0857D8D1B9A97C800B03E98 /* FoodImageViewController.m in Sources */,
-				F0857D421B9A74EE00B03E98 /* ViewController.m in Sources */,
+				F082773A1B9B7C7900E749DC /* FoodFrameViewController.m in Sources */,
+				F0F434591B9B20230079D067 /* FoodTagLookupManager.m in Sources */,
 				F0857D3F1B9A74EE00B03E98 /* AppDelegate.m in Sources */,
-				F0F434531B9AC7C20079D067 /* FoodPageViewController.m in Sources */,
+				F096023F1B9B966800D62A23 /* FoodServingsViewController.m in Sources */,
+				F0526F361B9BA7E2003C9415 /* CircleProgressView.m in Sources */,
+				F08277441B9B84C600E749DC /* FoodCenterViewController.m in Sources */,
+				F08277041B9B38A300E749DC /* FoodLoginViewController.m in Sources */,
+				F0526F321B9BA6F0003C9415 /* FoodSummaryViewController.m in Sources */,
+				F08277321B9B799D00E749DC /* FoodLeftMenuViewController.m in Sources */,
+				F08277061B9B38A300E749DC /* FoodSignUpViewController.m in Sources */,
+				F082771A1B9B602900E749DC /* FoodHistoryData.m in Sources */,
+				F08277121B9B561300E749DC /* FoodHealthKitManager.m in Sources */,
 				F0857D3C1B9A74EE00B03E98 /* main.m in Sources */,
 				F0857D6F1B9A75FD00B03E98 /* FoodRecognitionManager.m in Sources */,
 			);
@@ -522,6 +709,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodScanner/FoodScanner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,6 +722,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bschmuck.FoodScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -539,6 +730,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodScanner/FoodScanner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,6 +743,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bschmuck.FoodScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

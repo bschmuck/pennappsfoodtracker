@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +16,67 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BananaScana.png" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-Ba-hVj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="cgV-w0-XLb"/>
+                                    <constraint firstAttribute="height" constant="33" id="ghH-RV-h6k"/>
+                                    <constraint firstAttribute="width" constant="143" id="z2N-OP-WE1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cgV-w0-XLb"/>
+                                        <exclude reference="ghH-RV-h6k"/>
+                                        <exclude reference="z2N-OP-WE1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cgV-w0-XLb"/>
+                                        <include reference="ghH-RV-h6k"/>
+                                        <include reference="z2N-OP-WE1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O3g-Ba-hVj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ICp-uR-k9S"/>
+                            <constraint firstItem="O3g-Ba-hVj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="213" id="Rle-QI-62B"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="O3g-Ba-hVj" secondAttribute="bottom" constant="401" id="mev-7i-pmq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="O3g-Ba-hVj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ICp-uR-k9S"/>
+                                <exclude reference="Rle-QI-62B"/>
+                                <exclude reference="mev-7i-pmq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="O3g-Ba-hVj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ICp-uR-k9S"/>
+                                <include reference="Rle-QI-62B"/>
+                                <include reference="mev-7i-pmq"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BananaScana.png" width="489" height="60"/>
+    </resources>
 </document>
