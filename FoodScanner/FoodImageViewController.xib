@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoodImageViewController">
+            <connections>
+                <outlet property="imageView" destination="HqB-h1-pRw" id="zoR-a0-qNz"/>
+                <outlet property="photoButton" destination="VaI-ly-7jg" id="C6z-kL-LL3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-ly-7jg">
+                    <rect key="frame" x="122" y="530" width="77" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Take Photo"/>
+                    <connections>
+                        <action selector="takePhoto:" destination="-1" eventType="touchUpInside" id="jiQ-RS-16c"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HqB-h1-pRw">
+                    <rect key="frame" x="8" y="8" width="304" height="521"/>
+                    <animations/>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VaI-ly-7jg" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="1NI-gd-ijs"/>
+                <constraint firstItem="VaI-ly-7jg" firstAttribute="top" secondItem="HqB-h1-pRw" secondAttribute="bottom" constant="1" id="1g0-9T-Zfi"/>
+                <constraint firstItem="HqB-h1-pRw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="27w-rU-zK3"/>
+                <constraint firstItem="HqB-h1-pRw" firstAttribute="centerX" secondItem="VaI-ly-7jg" secondAttribute="centerX" id="2Ye-fe-b6D"/>
+                <constraint firstItem="HqB-h1-pRw" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="9wl-1u-YTm"/>
+                <constraint firstItem="HqB-h1-pRw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="Kfj-P4-cVK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="27w-rU-zK3"/>
+                    <exclude reference="2Ye-fe-b6D"/>
+                    <exclude reference="9wl-1u-YTm"/>
+                    <exclude reference="Kfj-P4-cVK"/>
+                    <exclude reference="1NI-gd-ijs"/>
+                    <exclude reference="1g0-9T-Zfi"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="27w-rU-zK3"/>
+                    <include reference="2Ye-fe-b6D"/>
+                    <include reference="9wl-1u-YTm"/>
+                    <include reference="Kfj-P4-cVK"/>
+                    <include reference="1NI-gd-ijs"/>
+                    <include reference="1g0-9T-Zfi"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
