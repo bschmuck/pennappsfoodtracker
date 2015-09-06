@@ -30,10 +30,17 @@
     [dateFormatter setDateFormat:@"YYYY-MM-DD"];
     NSString *dateString = [dateFormatter stringFromDate:currentDate];
     
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *now = [NSDate date];
+    
+    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:now];
+    
+    NSDate *startDate = [calendar dateFromComponents:components];
+    
     PFQuery *query = [PFQuery queryWithClassName:@"History"];
     [query whereKey:@"username" equalTo:[PFUser currentUser].username];
     [query orderByDescending:@"createdAt"];
-    [query whereKey:@"timeStamp" greaterThanOrEqualTo: dateString];
+    [query whereKey:@"timeStamp" greaterThanOrEqualTo:startDate];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.

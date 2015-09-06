@@ -9,6 +9,9 @@
 #import "FoodCenterViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "FoodImageViewController.h"
+#import "FoodSummaryViewController.h"
+#import "FoodHistoryViewController.h"
+#import "FoodAboutViewController.h"
 
 
 @interface FoodCenterViewController ()
@@ -87,7 +90,22 @@
         case 0:
         {
             selectedViewController = [[FoodImageViewController alloc] initWithNibName:@"FoodImageViewController" bundle:nil];
+            break;
         }
+        case 1:
+        {
+            selectedViewController = [[FoodSummaryViewController alloc] initWithNibName:@"FoodSummaryViewController" bundle:nil];
+            break;
+        }
+        case 2:
+        {
+            selectedViewController = [[FoodHistoryViewController alloc] initWithNibName:@"FoodHistoryViewController" bundle:nil];
+            break;
+        }
+        case 3:
+            selectedViewController = [[FoodAboutViewController alloc] initWithNibName:@"FoodAboutViewController" bundle:nil];
+            break;
+            
         default:
             break;
     }

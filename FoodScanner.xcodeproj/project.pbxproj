@@ -36,7 +36,6 @@
 		F0857D551B9A74EF00B03E98 /* FoodScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D541B9A74EF00B03E98 /* FoodScannerTests.m */; };
 		F0857D601B9A74EF00B03E98 /* FoodScannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D5F1B9A74EF00B03E98 /* FoodScannerUITests.m */; };
 		F0857D6F1B9A75FD00B03E98 /* FoodRecognitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0857D6E1B9A75FD00B03E98 /* FoodRecognitionManager.m */; };
-		F0857D711B9A7BD400B03E98 /* coffee-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0857D701B9A7BD400B03E98 /* coffee-3.jpg */; };
 		F0857D741B9A91FD00B03E98 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D721B9A91FD00B03E98 /* Bolts.framework */; };
 		F0857D751B9A91FD00B03E98 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D731B9A91FD00B03E98 /* Parse.framework */; };
 		F0857D771B9A925600B03E98 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0857D761B9A925600B03E98 /* AudioToolbox.framework */; };
@@ -54,6 +53,12 @@
 		F0857D971B9ABECE00B03E98 /* listTagsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0857D961B9ABECE00B03E98 /* listTagsIcon.png */; };
 		F096023F1B9B966800D62A23 /* FoodServingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F096023D1B9B966800D62A23 /* FoodServingsViewController.m */; };
 		F09602401B9B966800D62A23 /* FoodServingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F096023E1B9B966800D62A23 /* FoodServingsViewController.xib */; };
+		F0F42D301B9BC38D00837C06 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D2B1B9BC38D00837C06 /* CustomTableViewCell.m */; };
+		F0F42D311B9BC38D00837C06 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F42D2C1B9BC38D00837C06 /* CustomTableViewCell.xib */; };
+		F0F42D321B9BC38D00837C06 /* FoodHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D2E1B9BC38D00837C06 /* FoodHistoryViewController.m */; };
+		F0F42D331B9BC38D00837C06 /* FoodHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F42D2F1B9BC38D00837C06 /* FoodHistoryViewController.xib */; };
+		F0F42D371B9BC56700837C06 /* FoodAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D351B9BC56700837C06 /* FoodAboutViewController.m */; };
+		F0F42D381B9BC56700837C06 /* FoodAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F42D361B9BC56700837C06 /* FoodAboutViewController.xib */; };
 		F0F434541B9AC7C20079D067 /* FoodPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */; };
 		F0F434591B9B20230079D067 /* FoodTagLookupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F434581B9B20230079D067 /* FoodTagLookupManager.m */; };
 /* End PBXBuildFile section */
@@ -123,7 +128,6 @@
 		F0857D611B9A74EF00B03E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0857D6D1B9A75FD00B03E98 /* FoodRecognitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodRecognitionManager.h; sourceTree = "<group>"; };
 		F0857D6E1B9A75FD00B03E98 /* FoodRecognitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodRecognitionManager.m; sourceTree = "<group>"; };
-		F0857D701B9A7BD400B03E98 /* coffee-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "coffee-3.jpg"; sourceTree = "<group>"; };
 		F0857D721B9A91FD00B03E98 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F0857D731B9A91FD00B03E98 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F0857D761B9A925600B03E98 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -144,6 +148,15 @@
 		F096023C1B9B966800D62A23 /* FoodServingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodServingsViewController.h; sourceTree = "<group>"; };
 		F096023D1B9B966800D62A23 /* FoodServingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodServingsViewController.m; sourceTree = "<group>"; };
 		F096023E1B9B966800D62A23 /* FoodServingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodServingsViewController.xib; sourceTree = "<group>"; };
+		F0F42D2A1B9BC38D00837C06 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		F0F42D2B1B9BC38D00837C06 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		F0F42D2C1B9BC38D00837C06 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		F0F42D2D1B9BC38D00837C06 /* FoodHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodHistoryViewController.h; sourceTree = "<group>"; };
+		F0F42D2E1B9BC38D00837C06 /* FoodHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodHistoryViewController.m; sourceTree = "<group>"; };
+		F0F42D2F1B9BC38D00837C06 /* FoodHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodHistoryViewController.xib; sourceTree = "<group>"; };
+		F0F42D341B9BC56700837C06 /* FoodAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodAboutViewController.h; path = ../FoodAboutViewController.h; sourceTree = "<group>"; };
+		F0F42D351B9BC56700837C06 /* FoodAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodAboutViewController.m; path = ../FoodAboutViewController.m; sourceTree = "<group>"; };
+		F0F42D361B9BC56700837C06 /* FoodAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoodAboutViewController.xib; path = ../FoodAboutViewController.xib; sourceTree = "<group>"; };
 		F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodPageViewController.xib; sourceTree = "<group>"; };
 		F0F434571B9B20230079D067 /* FoodTagLookupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTagLookupManager.h; sourceTree = "<group>"; };
 		F0F434581B9B20230079D067 /* FoodTagLookupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTagLookupManager.m; sourceTree = "<group>"; };
@@ -190,6 +203,9 @@
 		F082770A1B9B524700E749DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F0F42D341B9BC56700837C06 /* FoodAboutViewController.h */,
+				F0F42D351B9BC56700837C06 /* FoodAboutViewController.m */,
+				F0F42D361B9BC56700837C06 /* FoodAboutViewController.xib */,
 				F08277001B9B38A300E749DC /* FoodLoginViewController.xib */,
 				F08277031B9B38A300E749DC /* FoodSignUpViewController.xib */,
 				F0857D921B9AB62400B03E98 /* FoodImageViewController.xib */,
@@ -294,7 +310,6 @@
 		F0857D2E1B9A74EE00B03E98 = {
 			isa = PBXGroup;
 			children = (
-				F08277161B9B569A00E749DC /* HealthKit.framework */,
 				F0857D881B9A929D00B03E98 /* libsqlite3.tbd */,
 				F0857D861B9A929200B03E98 /* libz.tbd */,
 				F08277231B9B6F0400E749DC /* BananaScana.png */,
@@ -306,7 +321,6 @@
 				F08277271B9B6FB800E749DC /* historyIcon.png */,
 				F082773C1B9B7DD800E749DC /* menuButton.png */,
 				F08277251B9B6F9900E749DC /* cameraIcon.png */,
-				F0857D701B9A7BD400B03E98 /* coffee-3.jpg */,
 				F08276FC1B9B2EDA00E749DC /* output.json */,
 				F0857D721B9A91FD00B03E98 /* Bolts.framework */,
 				F0857D731B9A91FD00B03E98 /* Parse.framework */,
@@ -373,6 +387,12 @@
 		F0857D8F1B9A9AA700B03E98 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0F42D2A1B9BC38D00837C06 /* CustomTableViewCell.h */,
+				F0F42D2B1B9BC38D00837C06 /* CustomTableViewCell.m */,
+				F0F42D2C1B9BC38D00837C06 /* CustomTableViewCell.xib */,
+				F0F42D2D1B9BC38D00837C06 /* FoodHistoryViewController.h */,
+				F0F42D2E1B9BC38D00837C06 /* FoodHistoryViewController.m */,
+				F0F42D2F1B9BC38D00837C06 /* FoodHistoryViewController.xib */,
 				F0526F2F1B9BA6F0003C9415 /* FoodSummaryViewController.h */,
 				F0526F301B9BA6F0003C9415 /* FoodSummaryViewController.m */,
 				F0526F311B9BA6F0003C9415 /* FoodSummaryViewController.xib */,
@@ -388,6 +408,7 @@
 		F0F4344F1B9AC7970079D067 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				F08277161B9B569A00E749DC /* HealthKit.framework */,
 				F0857D841B9A928C00B03E98 /* SystemConfiguration.framework */,
 				F0857D821B9A928400B03E98 /* StoreKit.framework */,
 				F0857D801B9A927500B03E98 /* Security.framework */,
@@ -516,19 +537,21 @@
 				F0857D4A1B9A74EE00B03E98 /* LaunchScreen.storyboard in Resources */,
 				F0526F331B9BA6F0003C9415 /* FoodSummaryViewController.xib in Resources */,
 				F0857D471B9A74EE00B03E98 /* Assets.xcassets in Resources */,
+				F0F42D331B9BC38D00837C06 /* FoodHistoryViewController.xib in Resources */,
 				F0857D451B9A74EE00B03E98 /* Main.storyboard in Resources */,
 				F08277051B9B38A300E749DC /* FoodLoginViewController.xib in Resources */,
 				F08277451B9B84C600E749DC /* FoodCenterViewController.xib in Resources */,
 				F08276FD1B9B2EDA00E749DC /* output.json in Resources */,
 				F0857D931B9AB62400B03E98 /* FoodImageViewController.xib in Resources */,
 				F08277261B9B6F9900E749DC /* cameraIcon.png in Resources */,
-				F0857D711B9A7BD400B03E98 /* coffee-3.jpg in Resources */,
 				F08277071B9B38A300E749DC /* FoodSignUpViewController.xib in Resources */,
 				F08277331B9B799D00E749DC /* FoodLeftMenuViewController.xib in Resources */,
 				F082773D1B9B7DD800E749DC /* menuButton.png in Resources */,
+				F0F42D381B9BC56700837C06 /* FoodAboutViewController.xib in Resources */,
 				F0857D971B9ABECE00B03E98 /* listTagsIcon.png in Resources */,
 				F082773B1B9B7C7900E749DC /* FoodFrameViewController.xib in Resources */,
 				F08277241B9B6F0400E749DC /* BananaScana.png in Resources */,
+				F0F42D311B9BC38D00837C06 /* CustomTableViewCell.xib in Resources */,
 				F09602401B9B966800D62A23 /* FoodServingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +582,7 @@
 				F0F434591B9B20230079D067 /* FoodTagLookupManager.m in Sources */,
 				F0857D3F1B9A74EE00B03E98 /* AppDelegate.m in Sources */,
 				F096023F1B9B966800D62A23 /* FoodServingsViewController.m in Sources */,
+				F0F42D321B9BC38D00837C06 /* FoodHistoryViewController.m in Sources */,
 				F0526F361B9BA7E2003C9415 /* CircleProgressView.m in Sources */,
 				F08277441B9B84C600E749DC /* FoodCenterViewController.m in Sources */,
 				F08277041B9B38A300E749DC /* FoodLoginViewController.m in Sources */,
@@ -568,6 +592,8 @@
 				F082771A1B9B602900E749DC /* FoodHistoryData.m in Sources */,
 				F08277121B9B561300E749DC /* FoodHealthKitManager.m in Sources */,
 				F0857D3C1B9A74EE00B03E98 /* main.m in Sources */,
+				F0F42D301B9BC38D00837C06 /* CustomTableViewCell.m in Sources */,
+				F0F42D371B9BC56700837C06 /* FoodAboutViewController.m in Sources */,
 				F0857D6F1B9A75FD00B03E98 /* FoodRecognitionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

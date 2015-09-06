@@ -12,7 +12,7 @@
 
 - (id)init{
     self = [super init];
-    self.filterKeys = @[@"banana", @"pizza", @"coffee"];
+    self.filterKeys = @[@"banana", @"pizza", @"coffee", @"bread"];
     return self;
 }
 

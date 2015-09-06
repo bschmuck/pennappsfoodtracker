@@ -31,7 +31,7 @@
  Updates the table view with all available menu options
  */
 - (void)updateTableView{
-    self.menuOptions = @[@"Home", @"Details", @"About"];
+    self.menuOptions = @[@"Home", @"Today", @"History", @"About"];
 }
 
 

@@ -14,5 +14,6 @@
 
 - (void)requestAuthorization;
 - (void)saveCalorieInformationWithCalories:(double)calories;
+- (void)getActiveCaloriesBurnedToday;
 
 @end

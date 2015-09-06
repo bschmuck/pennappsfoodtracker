@@ -215,6 +215,9 @@
     self.numServings = servings;
     [self.caloriesLabel setText:[NSString stringWithFormat:@"%ld Calories",([[self.foodPossibilitiesDict objectForKey:self.selectedFoodItem]integerValue] * self.numServings)]];
     [self.numServingsLabel setText:[NSString stringWithFormat:@"%ld", self.numServings]];
+    float numCalories = self.numServings * [[self.foodPossibilitiesDict objectForKey:self.selectedFoodItem] floatValue];
+    [self.healthKitManager saveCalorieInformationWithCalories:numCalories];
+    [self.historyDataManager saveData:self.selectedFoodItem withCalories:([self.foodPossibilitiesDict[self.selectedFoodItem] doubleValue] * self.numServings)];
 }
 
 @end
