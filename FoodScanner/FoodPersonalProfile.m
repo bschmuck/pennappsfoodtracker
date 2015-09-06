@@ -24,6 +24,9 @@
     return self;
 }
 
+/**
+ Retrieves health information from user from Healthkit
+ */
 - (void)pullProfileInformation{
     [self.manager retrieveWeight];
     [self.manager retrieveHeight];
@@ -31,6 +34,9 @@
     self.isMale = [self.manager retrieveBiologicalSexIsMale];
 }
 
+/**
+ Called when height value has been received
+ */
 - (void)FoodHealthKitManager:(FoodHealthKitManager *)manager didReceiveHeight:(double)height{
     self.height = height;
     if(self.weight){
@@ -38,6 +44,9 @@
     }
 }
 
+/**
+ Called when weight value has been received
+ */
 - (void)FoodHealthKitManager:(FoodHealthKitManager *)manager didReceiveWeight:(double)weight{
     self.weight = weight;
     if(self.height){

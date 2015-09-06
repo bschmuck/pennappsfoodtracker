@@ -41,6 +41,9 @@
     }
 }
 
+/**
+ Retrieves height from HealthKit
+ */
 - (void)retrieveHeight{
     HKQuantityType *heightType = [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight];
     NSSortDescriptor *timeSortDescriptor = [[NSSortDescriptor alloc] initWithKey:HKSampleSortIdentifierEndDate ascending:NO];
@@ -56,6 +59,11 @@
     [self.healthStore executeQuery:query];
 }
 
+/**
+ Retrieves weight from HealthKit: Note, issue was occuring with
+ HealthKit for this parameterm, so hardcoded value being
+ temporarily used
+ */
 - (void)retrieveWeight{
     HKQuantityType *weightType = [HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
     NSSortDescriptor *timeSortDescriptor = [[NSSortDescriptor alloc] initWithKey:HKSampleSortIdentifierEndDate ascending:NO];
@@ -74,6 +82,9 @@
     [self.delegate FoodHealthKitManager:self didReceiveWeight:170];
 }
 
+/**
+ Determines whether gender is male or female based on HealthKit data
+ */
 - (BOOL)retrieveBiologicalSexIsMale{
     HKBiologicalSexObject *biologicalSex = [self.healthStore biologicalSexWithError:nil];
     switch (biologicalSex.biologicalSex) {
@@ -87,6 +98,9 @@
     return NO;
 }
 
+/**
+ Returns age in years based on HealthKit data
+ */
 - (NSInteger)getAge{
     NSDate *birthday = [self.healthStore dateOfBirthWithError:nil];
     NSDate *today = [NSDate date];
@@ -115,6 +129,9 @@
     }];
 }
 
+/**
+ Returns active calories for day based on HealthKit
+ */
 - (void)getActiveCaloriesBurnedToday{
     
     NSCalendar *calendar = [NSCalendar currentCalendar];

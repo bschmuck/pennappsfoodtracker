@@ -49,12 +49,19 @@
         [self.numServingsLabel setText:[NSString stringWithFormat:@"%ld", self.numServings]];
     });
 }
+
+/**
+ Cancels adding an item
+ */
 - (IBAction)cancelAddItem:(id)sender {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self dismissViewControllerAnimated:YES completion:nil];
     });
 }
 
+/**
+ Saves serving update and dismisses view
+ */
 - (IBAction)saveServings:(id)sender {
     [self.delegate FoodServingViewController:self didUpdateServings:self.numServings];
     dispatch_async(dispatch_get_main_queue(), ^{

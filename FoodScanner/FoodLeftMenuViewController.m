@@ -34,7 +34,9 @@
     self.menuOptions = @[@"Home", @"Today", @"History", @"About"];
 }
 
-
+/**
+ Height of table cells
+ */
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50.0;
 }

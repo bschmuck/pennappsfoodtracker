@@ -47,6 +47,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ Called when HealthKit data has been retrieved
+ Calorie suggestion is then calculated and UI is updated
+ */
 - (void)FoodPersonalProfileReadyForCalculation:(FoodPersonalProfile *)profile{
     FoodCalorieCalculator *calculator = [[FoodCalorieCalculator alloc] init];
     self.calorieSuggestion = [calculator calculateSuggestedCaloriesWithProfile:profile andExercise:ExerciseAmountModerateExercise];

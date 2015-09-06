@@ -40,7 +40,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [FoodHistoryData checkNewDay];
     
     self.numServings = 1;
@@ -214,6 +213,10 @@
     }
 }
 
+/**
+ Called when servings have been updated. Information is then 
+ saved in HealthKit
+ */
 - (void)FoodServingViewController:(FoodServingsViewController *)viewController didUpdateServings:(NSInteger)servings{
     self.numServings = servings;
     [self.caloriesLabel setText:[NSString stringWithFormat:@"%ld Calories",([[self.foodPossibilitiesDict objectForKey:self.selectedFoodItem]integerValue] * self.numServings)]];

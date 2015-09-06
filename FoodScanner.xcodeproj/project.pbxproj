@@ -291,10 +291,7 @@
 		F082771E1B9B605E00E749DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F0F42D3F1B9BD64300837C06 /* FoodCalorieCalculator.h */,
-				F0F42D401B9BD64300837C06 /* FoodCalorieCalculator.m */,
-				F0F42D421B9BD6AA00837C06 /* FoodPersonalProfile.h */,
-				F0F42D431B9BD6AA00837C06 /* FoodPersonalProfile.m */,
+				F0F42D471B9C585F00837C06 /* Calorie Calculations */,
 				F082771C1B9B604000E749DC /* HealthKit Manager */,
 				F082771B1B9B603800E749DC /* Food Parse Manager */,
 				F0857D3D1B9A74EE00B03E98 /* AppDelegate.h */,
@@ -477,6 +474,17 @@
 				F08277421B9B84C600E749DC /* FoodCenterViewController.m */,
 			);
 			name = "Center View Controller";
+			sourceTree = "<group>";
+		};
+		F0F42D471B9C585F00837C06 /* Calorie Calculations */ = {
+			isa = PBXGroup;
+			children = (
+				F0F42D431B9BD6AA00837C06 /* FoodPersonalProfile.m */,
+				F0F42D421B9BD6AA00837C06 /* FoodPersonalProfile.h */,
+				F0F42D3F1B9BD64300837C06 /* FoodCalorieCalculator.h */,
+				F0F42D401B9BD64300837C06 /* FoodCalorieCalculator.m */,
+			);
+			name = "Calorie Calculations";
 			sourceTree = "<group>";
 		};
 		F0F4344F1B9AC7970079D067 /* Framework */ = {
