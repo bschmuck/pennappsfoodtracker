@@ -22,6 +22,6 @@
 
 - (void)saveData:(NSString*)name withCalories:(double)calories;
 - (void)getData;
-+ (void)checkNewDay;
++ (void)checkNewDay:(BOOL)forceReset;
 
 @end

@@ -55,12 +55,12 @@
 		F09602401B9B966800D62A23 /* FoodServingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F096023E1B9B966800D62A23 /* FoodServingsViewController.xib */; };
 		F0F42D301B9BC38D00837C06 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D2B1B9BC38D00837C06 /* CustomTableViewCell.m */; };
 		F0F42D311B9BC38D00837C06 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F42D2C1B9BC38D00837C06 /* CustomTableViewCell.xib */; };
-		F0F42D321B9BC38D00837C06 /* FoodHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D2E1B9BC38D00837C06 /* FoodHistoryViewController.m */; };
 		F0F42D331B9BC38D00837C06 /* FoodHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F42D2F1B9BC38D00837C06 /* FoodHistoryViewController.xib */; };
 		F0F42D371B9BC56700837C06 /* FoodAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D351B9BC56700837C06 /* FoodAboutViewController.m */; };
 		F0F42D381B9BC56700837C06 /* FoodAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F42D361B9BC56700837C06 /* FoodAboutViewController.xib */; };
 		F0F42D411B9BD64300837C06 /* FoodCalorieCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D401B9BD64300837C06 /* FoodCalorieCalculator.m */; };
 		F0F42D441B9BD6AA00837C06 /* FoodPersonalProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D431B9BD6AA00837C06 /* FoodPersonalProfile.m */; };
+		F0F42D491B9C5C5100837C06 /* FoodHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D481B9C5C5100837C06 /* FoodHistoryViewController.m */; };
 		F0F434541B9AC7C20079D067 /* FoodPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */; };
 		F0F434591B9B20230079D067 /* FoodTagLookupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F434581B9B20230079D067 /* FoodTagLookupManager.m */; };
 /* End PBXBuildFile section */
@@ -154,7 +154,6 @@
 		F0F42D2B1B9BC38D00837C06 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		F0F42D2C1B9BC38D00837C06 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		F0F42D2D1B9BC38D00837C06 /* FoodHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodHistoryViewController.h; sourceTree = "<group>"; };
-		F0F42D2E1B9BC38D00837C06 /* FoodHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodHistoryViewController.m; sourceTree = "<group>"; };
 		F0F42D2F1B9BC38D00837C06 /* FoodHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodHistoryViewController.xib; sourceTree = "<group>"; };
 		F0F42D341B9BC56700837C06 /* FoodAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodAboutViewController.h; path = ../FoodAboutViewController.h; sourceTree = "<group>"; };
 		F0F42D351B9BC56700837C06 /* FoodAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodAboutViewController.m; path = ../FoodAboutViewController.m; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		F0F42D401B9BD64300837C06 /* FoodCalorieCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodCalorieCalculator.m; path = ../FoodCalorieCalculator.m; sourceTree = "<group>"; };
 		F0F42D421B9BD6AA00837C06 /* FoodPersonalProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodPersonalProfile.h; sourceTree = "<group>"; };
 		F0F42D431B9BD6AA00837C06 /* FoodPersonalProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodPersonalProfile.m; sourceTree = "<group>"; };
+		F0F42D481B9C5C5100837C06 /* FoodHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodHistoryViewController.m; sourceTree = "<group>"; };
 		F0F434521B9AC7C20079D067 /* FoodPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodPageViewController.xib; sourceTree = "<group>"; };
 		F0F434571B9B20230079D067 /* FoodTagLookupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTagLookupManager.h; sourceTree = "<group>"; };
 		F0F434581B9B20230079D067 /* FoodTagLookupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTagLookupManager.m; sourceTree = "<group>"; };
@@ -435,7 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				F0F42D2D1B9BC38D00837C06 /* FoodHistoryViewController.h */,
-				F0F42D2E1B9BC38D00837C06 /* FoodHistoryViewController.m */,
+				F0F42D481B9C5C5100837C06 /* FoodHistoryViewController.m */,
 			);
 			name = "History View Controller";
 			sourceTree = "<group>";
@@ -664,7 +664,6 @@
 				F0F434591B9B20230079D067 /* FoodTagLookupManager.m in Sources */,
 				F0857D3F1B9A74EE00B03E98 /* AppDelegate.m in Sources */,
 				F096023F1B9B966800D62A23 /* FoodServingsViewController.m in Sources */,
-				F0F42D321B9BC38D00837C06 /* FoodHistoryViewController.m in Sources */,
 				F0526F361B9BA7E2003C9415 /* CircleProgressView.m in Sources */,
 				F08277441B9B84C600E749DC /* FoodCenterViewController.m in Sources */,
 				F08277041B9B38A300E749DC /* FoodLoginViewController.m in Sources */,
@@ -675,6 +674,7 @@
 				F0F42D441B9BD6AA00837C06 /* FoodPersonalProfile.m in Sources */,
 				F082771A1B9B602900E749DC /* FoodHistoryData.m in Sources */,
 				F08277121B9B561300E749DC /* FoodHealthKitManager.m in Sources */,
+				F0F42D491B9C5C5100837C06 /* FoodHistoryViewController.m in Sources */,
 				F0857D3C1B9A74EE00B03E98 /* main.m in Sources */,
 				F0F42D301B9BC38D00837C06 /* CustomTableViewCell.m in Sources */,
 				F0F42D371B9BC56700837C06 /* FoodAboutViewController.m in Sources */,

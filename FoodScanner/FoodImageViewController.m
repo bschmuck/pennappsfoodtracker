@@ -40,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [FoodHistoryData checkNewDay];
+    [FoodHistoryData checkNewDay:NO];
     
     self.numServings = 1;
     self.numberServingsView.layer.cornerRadius = 5;

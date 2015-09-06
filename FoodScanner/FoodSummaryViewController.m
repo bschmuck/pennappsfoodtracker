@@ -23,7 +23,7 @@
 @property (strong, nonatomic) FoodPersonalProfile *profile;
 @property (assign, nonatomic) NSInteger calorieSuggestion;
 @property (weak, nonatomic) IBOutlet UILabel *dailyIntakeLabel;
-@property (assign, nonatomic) NSInteger consumedCalories;
+@property (assign, nonatomic) double consumedCalories;
 @property (strong, nonatomic) FoodHistoryData *historyData;
 
 @end
@@ -39,7 +39,7 @@
     [self.profile pullProfileInformation];
     self.historyData = [[FoodHistoryData alloc] init];
     PFUser *user = [PFUser currentUser];
-    self.consumedCalories = [user[@"consumed"] integerValue];
+    self.consumedCalories = [[user objectForKey:@"consumed"] doubleValue];
 }
 
 - (void)didReceiveMemoryWarning {

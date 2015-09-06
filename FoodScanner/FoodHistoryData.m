@@ -69,15 +69,15 @@
     
 }
 
-+ (void)checkNewDay{
++ (void)checkNewDay:(BOOL)forceReset{
     PFUser *user = [PFUser currentUser];
     if(user != nil){
         NSDate *date = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         NSString *dateString = [dateFormatter stringFromDate:date];
-       /* NSDate *currentDate = user.updatedAt;
-        
+        NSDate *currentDate = user.updatedAt;
+        /*
 
         NSString *currentDateString = [dateFormatter stringFromDate:currentDate];
         

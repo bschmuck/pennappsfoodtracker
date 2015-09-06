@@ -30,7 +30,7 @@ const NSString *kParseClientID = @"rEeu7zVfdeAEVbVbXP6z277ISC9Pf8qaPtkRK3LJ";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [FoodHistoryData checkNewDay];
+    //[FoodHistoryData checkNewDay:NO];
     
     [Parse setApplicationId:kApplicationID clientKey:kParseClientID];
     self.viewController = [[FoodLoginViewController alloc] initWithNibName:@"FoodLoginViewController" bundle:nil];
