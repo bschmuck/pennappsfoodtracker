@@ -54,6 +54,8 @@
         user.username = self.email.text;
         user[@"firstname"] = self.fName.text;
         user[@"lastname"] = self.lastName.text;
+        user[@"consumed"] = @0.0;
+        user[@"goal"] = @2000.0;
         
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {

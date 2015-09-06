@@ -11,6 +11,7 @@
 #import "FoodHealthKitManager.h"
 #import "FoodHistoryData.h"
 #import "FoodServingsViewController.h"
+#import "FoodHistoryData.h"
 
 @interface FoodImageViewController ()
 
@@ -39,7 +40,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    
+    [FoodHistoryData checkNewDay];
+    
     self.numServings = 1;
     self.numberServingsView.layer.cornerRadius = 5;
     self.manager = [[FoodRecognitionManager alloc] init];

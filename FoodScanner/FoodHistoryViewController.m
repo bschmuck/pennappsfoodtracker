@@ -41,7 +41,7 @@
 }
 
 -(void) foodHistoryData:(FoodHistoryData *)historyData didReceiveFoodInfo:(NSDictionary *)dict {
-    [todayTable addObject: dict];
+    [todayTable addObject:dict];
     [self.tableView reloadData];
 }
 
@@ -94,7 +94,7 @@
     NSDate *dateCurrent = [dict objectForKey:@"time"];
     NSLog(@"%@", dateCurrent);
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:MM"];
+    [dateFormatter setDateFormat:@"HH:mm"];
     NSString *dateString = [dateFormatter stringFromDate:dateCurrent];
     NSString *finalString = [NSString stringWithFormat:@"At %@", dateString];
     cell.time.text = finalString;

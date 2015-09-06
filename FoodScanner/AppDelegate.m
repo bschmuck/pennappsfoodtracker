@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
+#import "FoodHistoryData.h"
 #import "FoodImageViewController.h"
 #import "FoodLoginViewController.h"
 #import "FoodFrameViewController.h"
@@ -20,7 +21,7 @@ const NSString *kParseClientID = @"rEeu7zVfdeAEVbVbXP6z277ISC9Pf8qaPtkRK3LJ";
 
 @interface AppDelegate ()
 
-@property (strong, nonatomic) FoodFrameViewController *viewController;
+@property (strong, nonatomic) FoodLoginViewController *viewController;
 
 @end
 
@@ -29,9 +30,11 @@ const NSString *kParseClientID = @"rEeu7zVfdeAEVbVbXP6z277ISC9Pf8qaPtkRK3LJ";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [FoodHistoryData checkNewDay];
+    
     [Parse setApplicationId:kApplicationID clientKey:kParseClientID];
-    //self.viewController = [[FoodLoginViewController alloc] initWithNibName:@"FoodLoginViewController" bundle:nil];
-    self.viewController = [[FoodFrameViewController alloc] initWithNibName:@"FoodFrameViewController" bundle:nil];
+    self.viewController = [[FoodLoginViewController alloc] initWithNibName:@"FoodLoginViewController" bundle:nil];
+    //self.viewController = [[FoodFrameViewController alloc] initWithNibName:@"FoodFrameViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     
     // Override point for customization after application launch.

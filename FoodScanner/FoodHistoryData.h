@@ -12,7 +12,7 @@
 
 @protocol FoodHistoryDataDelegate <NSObject>
 
--(void) foodHistoryData :(FoodHistoryData *) historyData didReceiveFoodInfo:(NSDictionary *)dict;
+- (void)foodHistoryData :(FoodHistoryData *) historyData didReceiveFoodInfo:(NSDictionary *)dict;
 
 @end
 
@@ -20,7 +20,8 @@
 
 @property(weak, nonatomic) id <FoodHistoryDataDelegate> delegate;
 
--(void) saveData:(NSString*)name withCalories:(double)calories;
--(void) getData;
+- (void)saveData:(NSString*)name withCalories:(double)calories;
+- (void)getData;
++ (void)checkNewDay;
 
 @end

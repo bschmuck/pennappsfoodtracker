@@ -12,18 +12,23 @@
 
 @implementation FoodHistoryData
 
--(void) saveData:(NSString *)name withCalories:(double)calories {
+- (void)saveData:(NSString *)name withCalories:(double)calories {
     NSDate *date = [NSDate date];
     PFObject *object = [PFObject objectWithClassName:@"History"];
-    object[@"username"] = [PFUser currentUser].username;
+    //object[@"username"] = [PFUser currentUser].username;
     object[@"Name"] = name;
-    //@(variable) creates a NSNumber from double etc.
     object[@"Calories"] = @(calories);
     object[@"timeStamp"] = date;
     [object saveInBackground];
+    
+    PFUser *user = [PFUser currentUser];
+    double consumed = [user[@"consumed"] doubleValue];
+    consumed += calories;
+    user[@"consumed"] = @(consumed);
+    [user saveInBackground];
 }
 
--(void) getData {
+- (void)getData {
     
     NSDate *currentDate = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -38,7 +43,7 @@
     NSDate *startDate = [calendar dateFromComponents:components];
     
     PFQuery *query = [PFQuery queryWithClassName:@"History"];
-    [query whereKey:@"username" equalTo:[PFUser currentUser].username];
+    //[query whereKey:@"username" equalTo:[PFUser currentUser].username];
     [query orderByDescending:@"createdAt"];
     [query whereKey:@"timeStamp" greaterThanOrEqualTo:startDate];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -62,6 +67,26 @@
     
     }];
     
+}
+
++ (void)checkNewDay{
+    PFUser *user = [PFUser currentUser];
+    if(user != nil){
+        NSDate *date = [NSDate date];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSString *dateString = [dateFormatter stringFromDate:date];
+       /* NSDate *currentDate = user.updatedAt;
+        
+
+        NSString *currentDateString = [dateFormatter stringFromDate:currentDate];
+        
+        if (dateString != currentDateString) {
+            [user setValue:@0.0 forKey:@"consumed"];
+            [user setValue:[NSDate date] forKey:@"updatedAt"];
+            [user saveInBackground];
+        }*/
+    }
 }
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FoodPersonalProfile.h"
 
-@interface FoodSummaryViewController : UIViewController
+@interface FoodSummaryViewController : UIViewController <FoodPersonalProfileDelegate>
 
 @end
